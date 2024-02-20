@@ -1,2 +1,2 @@
 # configs
-Archlinux + Hyperland + Nvim configs
+Hyperland + waybar + Nvim configs
