@@ -1,6 +1,5 @@
 local lsp_zero = require('lsp-zero')
 require('lspconfig').rust_analyzer.setup({})
-require('lspconfig').lua_ls.setup({})
 
 local cmp = require('cmp')
 local cmp_action = require('lsp-zero').cmp_action()
@@ -21,3 +20,11 @@ lsp_zero.on_attach(function(client, bufnr)
     lsp_zero.default_keymaps({ buffer = bufnr })
     lsp_zero.buffer_autoformat()
 end)
+
+require('mason').setup({})
+require('mason-lspconfig').setup({
+    ensure_installed = {},
+    handlers = {
+        lsp_zero.default_setup,
+    },
+})

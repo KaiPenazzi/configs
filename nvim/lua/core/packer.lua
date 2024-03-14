@@ -59,4 +59,11 @@ return require('packer').startup(function(use)
     use("tpope/vim-fugitive")
 
     use('Aasim-A/scrollEOF.nvim')
+
+    use {
+        "williamboman/mason.nvim",
+        "williamboman/mason-lspconfig.nvim",
+        "neovim/nvim-lspconfig",
+    }
+
 end)
