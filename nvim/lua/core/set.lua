@@ -9,7 +9,7 @@ vim.opt.nu = true
 
 vim.opt.incsearch = true
 
-vim.opt.scrolloff = 8
+vim.opt.scrolloff = 20
 vim.opt.cursorcolumn = false
 vim.opt.cursorline = false
 

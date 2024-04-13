@@ -1,5 +1,12 @@
 local lsp_zero = require('lsp-zero')
 require('lspconfig').rust_analyzer.setup({})
+require('lspconfig').ltex.setup({
+    settings = {
+        ltex = {
+            language = "de",
+        },
+    },
+})
 
 local cmp = require('cmp')
 local cmp_action = require('lsp-zero').cmp_action()
