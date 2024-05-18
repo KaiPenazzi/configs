@@ -11,8 +11,8 @@
 "ipc": true,
 
 "modules-left": [
-	"custom/menu", 
-	"wlr/workspaces", 
+	//"custom/menu", 
+	//"wlr/workspaces", 
 	"cpu", 
 	"memory",
 	//"temperature", 
