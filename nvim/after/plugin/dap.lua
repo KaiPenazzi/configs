@@ -61,3 +61,5 @@ dap.configurations.rust = {
         stopOnEntry = false,
     },
 }
+
+require("dap-python").setpu("python3")
