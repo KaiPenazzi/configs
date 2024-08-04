@@ -60,6 +60,8 @@ return require('packer').startup(function(use)
 
     use('Aasim-A/scrollEOF.nvim')
 
+    use('mfussenegger/nvim-dap-pyhton')
+
     use {
         "williamboman/mason.nvim",
         "williamboman/mason-lspconfig.nvim",
