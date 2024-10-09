@@ -62,8 +62,6 @@ return require('packer').startup(function(use)
 
     use('Aasim-A/scrollEOF.nvim')
 
-    use('mfussenegger/nvim-dap-pyhton')
-
     use {
         "williamboman/mason.nvim",
         "williamboman/mason-lspconfig.nvim",
@@ -71,4 +69,10 @@ return require('packer').startup(function(use)
     }
 
     use { 'lervag/vimtex' }
+
+    use {
+        'mfussenegger/nvim-dap-python',
+        requires = { 'mfussenegger/nvim-dap' }
+    }
+    use "lukas-reineke/indent-blankline.nvim"
 end)

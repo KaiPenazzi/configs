@@ -1,4 +1,5 @@
 local lsp_zero = require('lsp-zero')
+
 require('lspconfig').rust_analyzer.setup({})
 require('lspconfig').ltex.setup({
     settings = {
@@ -8,8 +9,8 @@ require('lspconfig').ltex.setup({
     },
 })
 
+local cmp_action = lsp_zero.cmp_action()
 local cmp = require('cmp')
-local cmp_action = require('lsp-zero').cmp_action()
 
 cmp.setup({
     sources = {
@@ -20,7 +21,8 @@ cmp.setup({
     mapping = cmp.mapping.preset.insert({
         ['<Tab>'] = cmp_action.luasnip_supertab(),
         ['<S-Tab>'] = cmp_action.luasnip_shift_supertab(),
-    })
+        ['<C-z>'] = cmp.mapping.confirm(),
+    }),
 })
 
 lsp_zero.on_attach(function(client, bufnr)

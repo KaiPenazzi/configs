@@ -62,4 +62,17 @@ dap.configurations.rust = {
     },
 }
 
-require("dap-python").setpu("python3")
+require("dap-python").setup("python3")
+
+table.insert(require('dap').configurations.python, {
+    type = 'debugpy',
+    request = 'launch',
+    name = 'Run OCPPproxy',
+    program = '${workspaceFolder}/chargectrl/ocppproxy/src/ocppproxy/main.py',
+    cwd = '${workspaceFolder}',
+    console = 'integratedTerminal',
+    args = {
+        "-d",
+        "chargectrl/ocppproxy/"
+    }
+})
