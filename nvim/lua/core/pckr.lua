@@ -59,4 +59,6 @@ require('pckr').add {
     'mfussenegger/nvim-dap-python',
 
     "lukas-reineke/indent-blankline.nvim",
+
+    "lervag/vimtex",
 }
