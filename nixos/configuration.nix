@@ -8,7 +8,7 @@
 
   boot.loader.systemd-boot.enable = true;
 
-  hardware.opengl.enable = true;
+  hardware.graphics.enable = true;
 
   networking.hostName = "KaiNixOS"; # Define your hostname.
   # Pick only one of the below networking options.
@@ -46,6 +46,7 @@
       "spotify"
       "steam-run"
       "steam-original"
+      "steam-unwrapped"
     ];
 
   # List packages installed in system profile. To search, run:
@@ -74,9 +75,10 @@
     unzip
     biber
     wl-clipboard
+    ripgrep
   ];
 
 
-  system.stateVersion = "24.05"; # Did you read the comment?
+  system.stateVersion = "24.11"; # Did you read the comment?
 }
 
