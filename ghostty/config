@@ -1,0 +1,10 @@
+theme = catppuccin-mocha
+background-opacity = 0.8
+background = black
+title = ""
+window-decoration = false
+gtk-adwaita = false
+window-padding-x = 10
+
+keybind = ctrl+shift+h=previous_tab
+keybind = ctrl+shift+l=next_tab
