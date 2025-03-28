@@ -61,4 +61,6 @@ require('pckr').add {
     "lukas-reineke/indent-blankline.nvim",
 
     "lervag/vimtex",
+
+    "windwp/nvim-autopairs",
 }
