@@ -2,11 +2,19 @@ local lsp_zero = require('lsp-zero')
 
 require('lspconfig').rust_analyzer.setup({})
 require('lspconfig').ltex.setup({
+    filetypes = { "tex" },
     settings = {
         ltex = {
             language = "de",
         },
     },
+})
+require('lspconfig').clangd.setup({
+    format = {
+        -- IndentWidth = 4,
+        -- TabWidth = 4,
+        tabSize = 4
+    }
 })
 
 local cmp_action = lsp_zero.cmp_action()
@@ -21,7 +29,7 @@ cmp.setup({
     mapping = cmp.mapping.preset.insert({
         ['<Tab>'] = cmp_action.luasnip_supertab(),
         ['<S-Tab>'] = cmp_action.luasnip_shift_supertab(),
-        ['<C-z>'] = cmp.mapping.confirm(),
+        ['<C-y>'] = cmp.mapping.confirm(),
     }),
 })
 
@@ -36,4 +44,17 @@ require('mason-lspconfig').setup({
     handlers = {
         lsp_zero.default_setup,
     },
+})
+
+require('nvim-ts-autotag').setup()
+require('nvim-autopairs').setup()
+
+require("copilot").setup({
+    suggestion = {
+        enable = true,
+        auto_trigger = true,
+        keymap = {
+            accept = "<C-l>",
+        }
+    }
 })
