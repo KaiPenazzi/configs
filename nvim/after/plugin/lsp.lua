@@ -2,7 +2,7 @@ local lsp_zero = require('lsp-zero')
 
 require('lspconfig').rust_analyzer.setup({})
 require('lspconfig').ltex.setup({
-    filetypes = { "tex" },
+    filetypes = { "tex", "bib" },
     settings = {
         ltex = {
             language = "de",
