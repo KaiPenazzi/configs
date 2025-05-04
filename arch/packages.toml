@@ -1,5 +1,28 @@
 [pacman]
-packages = ["neovim", "htop", "starship"]
+packages = [
+    "discord",
+    "firefox",
+    "ghostty",
+    "htop",
+    "hyprland",
+    "hyprlock",
+    "hyprpaper",
+    "jdk-openjdk",
+    "keepassxc",
+    "neovim",
+    "nextcloud-client",
+    "rofi-wayland",
+    "rustup",
+    "starship",
+    "tree-sitter-cli",
+    "unzip",
+    "webkit2gtk",
+    "wl-clipboard",
+    "xdg-desktop-portal-hyprland",
+    "zathura",
+    "zathura-pdf-poppler",
+    "zip",
+]
 
 [aur]
-packages = ["spotify"]
+packages = ["aura", "hyprshot", "jdtls", "spotify", "texlive-installer"]
