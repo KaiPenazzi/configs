@@ -1,0 +1,5 @@
+[pacman]
+packages = ["neovim", "htop", "starship"]
+
+[aur]
+packages = ["spotify"]
