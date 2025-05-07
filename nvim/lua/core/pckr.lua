@@ -66,5 +66,8 @@ require('pckr').add {
 
     "windwp/nvim-autopairs",
 
-    "zbirenbaum/copilot.lua"
+    "zbirenbaum/copilot.lua",
+
+    "mfussenegger/nvim-jdtls",
+
 }
