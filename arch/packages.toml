@@ -25,4 +25,4 @@ packages = [
 ]
 
 [aur]
-packages = ["aura", "hyprshot", "jdtls", "spotify", "texlive-installer"]
+packages = ["aura", "hyprshot", "jdtls", "spotify", "texlive-installer", "atlauncher"]

@@ -52,7 +52,7 @@ require('nvim-autopairs').setup()
 require("copilot").setup({
     suggestion = {
         enable = true,
-        auto_trigger = true,
+        auto_trigger = false,
         keymap = {
             accept = "<C-l>",
         }
