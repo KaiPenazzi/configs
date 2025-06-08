@@ -7,7 +7,7 @@ bashrc = [
 ]
 
 [packages.pacman]
-packages = ["hyprland", "hyprlock", "hyprpaper", "wl-clipboard", "xdg-desktip-portal-hyprland"]
+packages = ["hyprland", "hyprlock", "hyprpaper", "wl-clipboard", "xdg-desktop-portal-hyprland"]
 
 [packages.aur]
 packages = ["hyprshot"]
