@@ -1,0 +1,4 @@
+name = "nvim"
+
+[packages.pacman]
+packages = ["neovim", "tree-sitter-cli"]

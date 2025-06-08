@@ -1,0 +1,18 @@
+[packages.pacman]
+packages = [
+    "discord",
+    "firefox",
+    "htop",
+    "jdk-openjdk",
+    "keepassxc",
+    "nextcloud-client",
+    "rustup",
+    "unzip",
+    "webkit2gtk",
+    "zathura",
+    "zathura-pdf-poppler",
+    "zip",
+]
+
+[packages.aur]
+packages = ["aura", "jdtls", "spotify", "texlive-installer", "atlauncher"]

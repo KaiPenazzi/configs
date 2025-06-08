@@ -5,3 +5,9 @@ bashrc = [
   "    exec Hyprland",
   "fi",
 ]
+
+[packages.pacman]
+packages = ["hyprland", "hyprlock", "hyprpaper", "wl-clipboard", "xdg-desktip-portal-hyprland"]
+
+[packages.aur]
+packages = ["hyprshot"]

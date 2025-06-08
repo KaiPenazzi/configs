@@ -1,0 +1,4 @@
+name = "rofi"
+
+[packages.pacman]
+packages = ["rofi-wayland"]

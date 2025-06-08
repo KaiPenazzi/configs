@@ -1,0 +1,4 @@
+name = "ghostty"
+
+[packages.pacman]
+packages = ["ghostty"]
