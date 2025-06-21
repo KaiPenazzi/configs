@@ -1,4 +1,5 @@
 name = "nvim"
 
-[packages.pacman]
-packages = ["neovim", "tree-sitter-cli"]
+[packages]
+pacman = ["neovim", "tree-sitter-cli", "jdtls", "rustup", "jdk-openjdk"]
+aur = ["codelldb-bin"]

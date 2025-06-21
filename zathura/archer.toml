@@ -1,0 +1,7 @@
+name = "zathura"
+
+[packages]
+pacman = [
+    "zathura",
+    "zathura-pdf-poppler"
+]

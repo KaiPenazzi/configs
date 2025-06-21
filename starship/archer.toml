@@ -4,5 +4,5 @@ bashrc = [
     'eval "$(starship init bash)"'
 ]
 
-[packages.pacman]
-packages = ["starship"]
+[packages]
+pacman = ["starship"]

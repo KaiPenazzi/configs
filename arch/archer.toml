@@ -1,20 +1,19 @@
 name = "arch"
 
-[packages.pacman]
-packages = [
+bashrc = [
+    "export CONFIG_REPO=git@github.com:KaiPenazzi/configs.git"
+]
+
+[packages]
+pacman = [
     "discord",
     "firefox",
     "htop",
-    "jdk-openjdk",
     "keepassxc",
     "nextcloud-client",
-    "rustup",
     "unzip",
     "webkit2gtk",
-    "zathura",
-    "zathura-pdf-poppler",
     "zip",
 ]
 
-[packages.aur]
-packages = ["aura", "jdtls", "spotify", "texlive-installer", "atlauncher"]
+aur = ["aura", "spotify", "texlive-installer", "atlauncher"]

@@ -1,4 +1,4 @@
 name = "ghostty"
 
-[packages.pacman]
-packages = ["ghostty"]
+[packages]
+pacman = ["ghostty"]
