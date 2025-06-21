@@ -1,0 +1,5 @@
+name = "helix"
+
+[packages]
+pacman = ["helix", "pyright", "lldb"]
+aur = ["codelldb-bin"]
