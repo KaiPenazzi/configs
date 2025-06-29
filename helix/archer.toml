@@ -5,5 +5,5 @@ bashrc = [
 ]
 
 [packages]
-pacman = ["helix", "pyright", "lldb"]
+pacman = ["helix", "pyright", "wl-clipboard"]
 aur = ["codelldb-bin"]
