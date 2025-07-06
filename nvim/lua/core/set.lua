@@ -16,3 +16,4 @@ vim.opt.cursorline = false
 --vim.opt.colorcolumn = "100"
 
 vim.opt.updatetime = 50
+vim.o.signcolumn = "yes"
