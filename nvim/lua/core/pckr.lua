@@ -64,4 +64,6 @@ require('pckr').add {
     "zbirenbaum/copilot.lua",
 
     "mfussenegger/nvim-jdtls",
+
+    "echasnovski/mini.nvim",
 }

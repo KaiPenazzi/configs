@@ -45,19 +45,28 @@ cmp.setup({
     }),
 })
 
+vim.api.nvim_create_autocmd("BufWritePre", {
+    callbac = function()
+        vim.lsp.buf.format({
+            async = false,
+            timeout_ms = 3000,
+        })
+    end,
+})
+
 require('mason').setup({})
 require('mason-lspconfig').setup()
 
 require('nvim-ts-autotag').setup()
 require('nvim-autopairs').setup()
+require('mini.surround').setup()
 
-require("copilot").setup({
+require('copilot').setup({
     suggestion = {
         enable = true,
         auto_trigger = false,
-        keymap = {
+        eymap = {
             accept = "<C-l>",
         }
     }
 })
-
