@@ -46,7 +46,7 @@ cmp.setup({
 })
 
 vim.api.nvim_create_autocmd("BufWritePre", {
-    callbac = function()
+    callback = function()
         vim.lsp.buf.format({
             async = false,
             timeout_ms = 3000,
