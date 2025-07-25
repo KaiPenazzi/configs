@@ -1,11 +1,17 @@
 name = "hypr"
 
 bashrc = [
-  "if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then",
-  "    exec Hyprland",
-  "fi",
+    "if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then",
+    "    exec Hyprland",
+    "fi",
 ]
 
 [packages]
-pacman = ["hyprland", "hyprlock", "hyprpaper", "wl-clipboard", "xdg-desktop-portal-hyprland"]
+pacman = [
+    "hyprland",
+    "hyprlock",
+    "hyprpaper",
+    "wl-clipboard",
+    "xdg-desktop-portal-hyprland",
+]
 aur = ["hyprshot"]
