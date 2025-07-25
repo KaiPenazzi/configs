@@ -1,3 +1,5 @@
+default-timeout=3000
+
 # Colors
 
 background-color=#1e1e2e
