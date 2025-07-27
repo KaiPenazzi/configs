@@ -15,6 +15,7 @@ pacman = [
     "unzip",
     "webkit2gtk",
     "zip",
+    "fastfetch",
 ]
 
 aur = ["aura", "spotify", "texlive-installer", "atlauncher"]
