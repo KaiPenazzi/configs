@@ -66,4 +66,6 @@ require('pckr').add {
     "mfussenegger/nvim-jdtls",
 
     "echasnovski/mini.nvim",
+
+    'wakatime/vim-wakatime',
 }
