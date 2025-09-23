@@ -1,9 +1,8 @@
-theme = catppuccin-mocha
+theme = catppuccin-mocha.conf
 background-opacity = 0.9
 background = black
 title = ""
 window-decoration = false
-gtk-adwaita = false
 window-padding-x = 10
 
 keybind = ctrl+shift+h=previous_tab
