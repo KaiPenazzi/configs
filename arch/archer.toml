@@ -22,4 +22,4 @@ pacman = [
     "borgbackup",
 ]
 
-aur = ["aura", "spotify", "texlive-installer", "atlauncher"]
+aur = ["aura", "spotify", "texlive-installer", "atlauncher", "insomnia"]

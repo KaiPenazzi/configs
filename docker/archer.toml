@@ -1,0 +1,4 @@
+name = "docker"
+
+[packages]
+pacman = ["docker", "docker-compose"]
