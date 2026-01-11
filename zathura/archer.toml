@@ -1,7 +1,6 @@
 name = "zathura"
 
+bashrc = ['zat() { setsid zathura "$1" >/dev/null 2>&1 & disown; }']
+
 [packages]
-pacman = [
-    "zathura",
-    "zathura-pdf-poppler"
-]
+pacman = ["zathura", "zathura-pdf-poppler"]
