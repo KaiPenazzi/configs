@@ -1,19 +1,11 @@
 require('lspconfig').rust_analyzer.setup({})
 
-require('lspconfig').ltex.setup({
-    filetypes = { "tex", "bib" },
-    settings = {
-        ltex = {
-            language = "de",
-        },
-    },
-})
-
 require('lspconfig').clangd.setup({
     format = {
         tabSize = 2,
     }
 })
+require('lspconfig').hls.setup {}
 
 local cmp = require('cmp')
 
