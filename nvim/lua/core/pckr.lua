@@ -68,4 +68,11 @@ require('pckr').add {
     "echasnovski/mini.nvim",
 
     'wakatime/vim-wakatime',
+
+    {
+        'Kurama622/llm.nvim',
+        cmd = { "LLMSessionToggle", "LLMSelectedTextHandler", "LLMAppHandler" }
+    },
+
+    'MunifTanjim/nui.nvim'
 }
