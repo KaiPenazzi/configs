@@ -2,13 +2,17 @@ require("llm").setup({
     url = "http://localhost:11434/api/chat",
     -- model = "mistral:7b",
     -- model = "qwen3:4b",
-    model = "ministral-3:8b",
+    -- model = "ministral-3:8b",
+    model = "pshohel/kimi-k2.5:latest",
     api_type = "ollama",
     fetch_key = "None",
     temperature = 0.3,
     top_p = 0.7,
+    enable_buffer_context = true,
 
-    prompt = "antworte in deutsch und kurz",
+    prompt =
+    "Antworte in deutsch, kurz und ohne Markdown. Ich verwende Neovim zum Programmieren und mit dir zu interagieren, ich nutze dich auf einem Arch-Linux Betriebsystem. Anki karten immer als html und am liebsten mit einer Aufzählung (ul/li)",
+    -- "antworte in deutsch und kurz. wenn ich nach anki karten frage, dann antworte mit html text, den ich direkt in anki einfügen kann",
 
     style = "right",
 
@@ -88,5 +92,89 @@ require("llm").setup({
         ["HalfPageDown"]      = { mode = { "i", "n" }, key = "<C-d>" },
         ["JumpToTop"]         = { mode = "n", key = "gg" },
         ["JumpToBottom"]      = { mode = "n", key = "G" },
+    },
+
+    app_handler = {
+        Ask = {
+            handler = "disposable_ask_handler",
+            opts = {
+                position = {
+                    row = 2,
+                    col = 2
+                },
+                title = " Ask ",
+                inline_assistant = true,
+                language = "deutsch",
+
+                enable_buffer_context = true,
+                diagnostic = { vim.diagnostic.severity.ERROR, vim.diagnostic.severity.WARN },
+
+                display = {
+                    mapping = {
+                        mode = "n",
+                        keys = { "d" },
+                    },
+                    action = nil,
+                },
+                accept = {
+                    mapping = {
+                        mode = "n",
+                        keys = { "Y", "y" },
+                    },
+                    action = nil,
+                },
+                reject = {
+                    mapping = {
+                        mode = "n",
+                        keys = { "N", "n" },
+                    },
+                    action = nil,
+                },
+                close = {
+                    mapping = {
+                        mode = "n",
+                        keys = { "<esc>" },
+                    },
+                    action = nil,
+                },
+            },
+        },
+        AttachToChat = {
+            handler = "attach_to_chat_handler",
+            opts = {
+                is_codeblock = true,
+                inline_assistant = true,
+                diagnostic = { vim.diagnostic.severity.ERROR, vim.diagnostic.severity.WARN },
+                language = "Deutsch",
+                display = {
+                    mapping = {
+                        mode = "n",
+                        keys = { "d" },
+                    },
+                    action = nil,
+                },
+                accept = {
+                    mapping = {
+                        mode = "n",
+                        keys = { "Y", "y" },
+                    },
+                    action = nil,
+                },
+                reject = {
+                    mapping = {
+                        mode = "n",
+                        keys = { "N", "n" },
+                    },
+                    action = nil,
+                },
+                close = {
+                    mapping = {
+                        mode = "n",
+                        keys = { "<esc>" },
+                    },
+                    action = nil,
+                },
+            },
+        },
     },
 })
