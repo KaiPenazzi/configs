@@ -1,0 +1,4 @@
+name = "kitty"
+
+[packages]
+pacman = ["kitty"]
