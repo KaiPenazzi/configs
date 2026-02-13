@@ -8,13 +8,22 @@ bashrc = [
 
 [packages]
 pacman = [
+    "bluetoothctl",
+    "bluez",
+    "bluez-utils",
+    "chafa",
+    "fastfetch",
     "htop",
     "keepassxc",
+    "pipewire",
+    "pipewire-alsa",
+    "pipewire-pulse",
+    "tlp",
+    "tlp-rdw",
     "unzip",
     "webkit2gtk",
     "zip",
-    "fastfetch",
-    "chafa",
+    "git",
 ]
 
 aur = ["aura", "spotify", "insomnia", "zen-browser-bin"]
