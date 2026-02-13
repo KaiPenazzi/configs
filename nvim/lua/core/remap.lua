@@ -28,13 +28,6 @@ vim.keymap.set({ 'n', 'v' }, '<leader>dt', function()
     require("dapui").toggle()
 end)
 
---jdtls debug test
---vim.keymap.set('n', '<leader>dtc', function() require('jdtls').test_class() end)
---vim.keymap.set('n', '<leader>dtm', function() require('jdtls').test_nearest_method() end)
-
---vim.keymap.set('n', '<leader>gt', ':! ./gradlew test<CR>')
---vim.keymap.set('n', '<leader>gr', ':! ./gradlew run<CR>')
-
 vim.keymap.set('n', '<leader>dtc', function() require('dap-python').test_class() end)
 vim.keymap.set('n', '<leader>dtm', function() require('dap-python').test_method() end)
 vim.keymap.set('n', '<leader>e#', ':e #<CR>')

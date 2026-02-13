@@ -1,9 +1,0 @@
-name = "helix"
-
-bashrc = [
-  "alias hx='helix'",
-]
-
-[packages]
-pacman = ["helix", "pyright", "wl-clipboard"]
-aur = ["codelldb-bin"]

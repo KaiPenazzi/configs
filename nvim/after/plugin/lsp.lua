@@ -43,13 +43,3 @@ require('mason-lspconfig').setup()
 require('nvim-ts-autotag').setup()
 require('nvim-autopairs').setup()
 require('mini.surround').setup()
-
--- require('copilot').setup({
---     suggestion = {
---         enable = true,
---         auto_trigger = false,
---         eymap = {
---             accept = "<C-l>",
---         }
---     }
--- })

@@ -8,25 +8,13 @@ bashrc = [
 
 [packages]
 pacman = [
-    "discord",
-    "firefox",
     "htop",
     "keepassxc",
-    "nextcloud-client",
     "unzip",
     "webkit2gtk",
     "zip",
     "fastfetch",
     "chafa",
-    "qmk",
-    "borgbackup",
 ]
 
-aur = [
-    "aura",
-    "spotify",
-    "texlive-installer",
-    "atlauncher",
-    "insomnia",
-    "zen-browser-bin",
-]
+aur = ["aura", "spotify", "insomnia", "zen-browser-bin"]

@@ -55,13 +55,9 @@ require('pckr').add {
 
     "lukas-reineke/indent-blankline.nvim",
 
-    "lervag/vimtex",
-
     "windwp/nvim-ts-autotag",
 
     "windwp/nvim-autopairs",
-
-    "zbirenbaum/copilot.lua",
 
     "mfussenegger/nvim-jdtls",
 

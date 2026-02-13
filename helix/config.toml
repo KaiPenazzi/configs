@@ -1,8 +1,0 @@
-theme = "transparent"
-
-[editor]
-cursor-shape.insert = "bar"
-mouse = false
-
-[keys.insert]
-"C-c" = "normal_mode"
