@@ -1,5 +1,7 @@
 local cmp = require('cmp')
 
+vim.lsp.enable('rust_analyzer')
+
 cmp.setup({
     sources = {
         { name = 'nvim_lsp' },
