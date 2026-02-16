@@ -13,40 +13,6 @@ dap.adapters.codelldb = {
     }
 }
 
-dap.configurations.java = {
-    {
-        -- You need to extend the classPath to list your dependencies.
-        -- `nvim-jdtls` would automatically add the `classPaths` property if it is missing
-        --classPaths = {},
-
-        -- If using multi-module projects, remove otherwise.
-        --projectName = "yourProjectName",
-
-        javaExec = "/usr/bin/java",
-        mainClass = "Main",
-
-        -- If using the JDK9+ module system, this needs to be extended
-        -- `nvim-jdtls` would automatically populate this property
-        --modulePaths = {},
-        name = "Launch Main",
-        request = "launch",
-        type = "java"
-    },
-}
-
-dap.configurations.cpp = {
-    {
-        name = "Launch file",
-        type = "codelldb",
-        request = "launch",
-        program = function()
-            return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
-        end,
-        cwd = '${workspaceFolder}',
-        stopOnEntry = false,
-    },
-}
-
 dap.configurations.rust = {
     {
         name = "Launch file",
