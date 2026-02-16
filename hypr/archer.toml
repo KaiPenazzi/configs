@@ -12,6 +12,7 @@ pacman = [
     "hyprlock",
     "hyprpaper",
     "wl-clipboard",
+    "waybar",
     "xdg-desktop-portal-hyprland",
 ]
 aur = ["hyprshot"]

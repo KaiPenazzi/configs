@@ -9,7 +9,6 @@ bashrc = [
 
 [packages]
 pacman = [
-    "bluetoothctl",
     "bluez",
     "bluez-utils",
     "chafa",
@@ -25,6 +24,9 @@ pacman = [
     "webkit2gtk",
     "zip",
     "git",
+    "less",
+    "network-manager-applet",
+    "tcpdump",
 ]
 
-aur = ["aura", "spotify", "insomnia", "zen-browser-bin"]
+aur = ["aura", "insomnia", "zen-browser-bin", "ttf-jetbrains-mono-nerd", "network-manager-sstp"]
