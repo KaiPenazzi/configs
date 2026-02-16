@@ -1,4 +1,9 @@
 name = "nvim"
 
+bashrc = [
+    "alias so='source .venv/bin/activate'",
+    "alias ex='export $(cat .env)'",
+]
+
 [packages]
 pacman = ["neovim", "tree-sitter-cli", "wl-clipboard", "ripgrep", "fd"]
