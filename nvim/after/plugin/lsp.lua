@@ -1,6 +1,7 @@
 local cmp = require('cmp')
 
 vim.lsp.enable('ty')
+vim.lsp.enable('ruff')
 
 cmp.setup({
     sources = {

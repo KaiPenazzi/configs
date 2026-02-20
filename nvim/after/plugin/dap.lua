@@ -28,7 +28,7 @@ dap.configurations.rust = {
     },
 }
 
-require("dap-python").setup("python3")
+require("dap-python").setup("python")
 
 table.insert(require('dap').configurations.python, {
     type = 'debugpy',

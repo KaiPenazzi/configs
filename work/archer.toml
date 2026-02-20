@@ -1,0 +1,7 @@
+name = "work"
+
+bashrc = ["alias rpiboot='rpiusbboot'"]
+
+[packages]
+pacman = ["time", "udisks2", "tree"]
+aur = ["rpiusbboot-git", "bmaptool", "rpi-imager"]
