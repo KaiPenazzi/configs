@@ -1,25 +1,3 @@
-<<<<<<< HEAD
-=======
-require('lspconfig').rust_analyzer.setup({})
-
-require('lspconfig').ltex.setup({
-    filetypes = { "tex", "bib" },
-    settings = {
-        ltex = {
-            language = "de",
-        },
-    },
-})
-
-require('lspconfig').clangd.setup({
-    format = {
-        tabSize = 2,
-    }
-})
-
-require("lspconfig").hls.setup({})
-
->>>>>>> e2c2539 (add haskell lsp + remove tex installer)
 local cmp = require('cmp')
 
 vim.lsp.enable('rust_analyzer')
