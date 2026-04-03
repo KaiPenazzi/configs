@@ -1,8 +1,9 @@
 local cmp = require('cmp')
 
+vim.lsp.enable('rust_analyzer')
 vim.lsp.enable('ty')
 vim.lsp.enable('ruff')
-vim.lsp.enable('rust_analyzer')
+vim.lsp.inlay_hint.enable()
 
 cmp.setup({
     sources = {
@@ -47,3 +48,13 @@ require('mason-lspconfig').setup()
 require('nvim-ts-autotag').setup()
 require('nvim-autopairs').setup()
 require('mini.surround').setup()
+
+-- require('copilot').setup({
+--     suggestion = {
+--         enable = true,
+--         auto_trigger = false,
+--         eymap = {
+--             accept = "<C-l>",
+--         }
+--     }
+-- })
