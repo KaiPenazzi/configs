@@ -1,6 +1,9 @@
 local cmp = require('cmp')
 
 vim.lsp.enable('rust_analyzer')
+vim.lsp.enable('ty')
+vim.lsp.enable('ruff')
+vim.lsp.inlay_hint.enable()
 
 cmp.setup({
     sources = {

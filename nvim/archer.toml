@@ -10,5 +10,15 @@ pacman = [
     "wl-clipboard",
     "ripgrep",
     "fd",
+    "webkit2gtk-4.1",
+    "base-devel",
+    "curl",
+    "wget",
+    "file",
+    "openssl",
+    "appmenu-gtk-module",
+    "libappindicator-gtk3",
+    "librsvg",
+    "xdotool",
 ]
 aur = ["codelldb-bin"]
