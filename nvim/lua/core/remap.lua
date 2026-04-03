@@ -1,6 +1,7 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.keymap.set("n", "<leader>nh", ':noh<CR>')
+vim.keymap.set("n", "gl", vim.diagnostic.open_float)
 
 vim.keymap.set('n', '<F5>', function() require('dap').continue() end)
 vim.keymap.set('n', '<F10>', function() require('dap').step_over() end)
@@ -38,7 +39,7 @@ end)
 vim.keymap.set('n', '<leader>dtc', function() require('dap-python').test_class() end)
 vim.keymap.set('n', '<leader>dtm', function() require('dap-python').test_method() end)
 vim.keymap.set('n', '<leader>e#', ':e #<CR>')
-vim.keymap.set('n', '<leader>lr', ':LspRestart<CR>')
+vim.keymap.set('n', '<leader>lr', ':lsp restart<CR>')
 
 vim.keymap.set({ "n", "v" }, "<leader>ait", ":LLMSessionToggle<CR>", { desc = "LLM toggle Chat" })
 vim.keymap.set({ "n", "v" }, "<leader>aia", ":LLMAppHandler Ask<CR>", { desc = "LLM Ask (buffer / selection)" })
