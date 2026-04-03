@@ -8,12 +8,14 @@ require('nvim-treesitter').setup {
     },
 }
 
-vim.api.nvim_create_autocmd("FileType", {
-  callback = function()
-    if vim.bo.buftype ~= "" then
-      return
-    end
+require('nvim-treesitter').install { 'rust', 'python', 'toml', 'gitcommit', 'lua', 'ini', 'markdown', 'latex' }
 
-    pcall(vim.treesitter.start)
-  end,
+vim.api.nvim_create_autocmd("FileType", {
+    callback = function()
+        if vim.bo.buftype ~= "" then
+            return
+        end
+
+        pcall(vim.treesitter.start)
+    end,
 })
