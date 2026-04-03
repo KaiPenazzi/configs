@@ -4,6 +4,7 @@ bashrc = [
     "export CONFIG_REPO=git@github.com:KaiPenazzi/configs.git",
     "export CONFIG_BRANCH=work",
     "alias vi='nvim .'",
+    "alias pro='cd ~/code/provisioner'",
     "export PATH=\"$HOME/.cargo/bin:$PATH\"",
 ]
 
@@ -12,21 +13,32 @@ pacman = [
     "bluez",
     "bluez-utils",
     "chafa",
+    "dosfstools",
     "fastfetch",
+    "git",
     "htop",
     "keepassxc",
+    "less",
+    "network-manager-applet",
     "pipewire",
     "pipewire-alsa",
     "pipewire-pulse",
+    "pv",
+    "tcpdump",
     "tlp",
     "tlp-rdw",
+    "torbrowser-launcher",
     "unzip",
     "webkit2gtk",
     "zip",
-    "git",
-    "less",
-    "network-manager-applet",
-    "tcpdump",
+    "docker-buildx",
 ]
 
-aur = ["aura", "insomnia", "zen-browser-bin", "ttf-jetbrains-mono-nerd", "network-manager-sstp"]
+aur = [
+    "aura",
+    "insomnia",
+    "zen-browser-bin",
+    "ttf-jetbrains-mono-nerd",
+    "network-manager-sstp",
+    "popsicle",
+]

@@ -14,5 +14,6 @@ pacman = [
     "wl-clipboard",
     "waybar",
     "xdg-desktop-portal-hyprland",
+    "brightnessctl",
 ]
 aur = ["hyprshot"]

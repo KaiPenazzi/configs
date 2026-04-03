@@ -6,4 +6,12 @@ bashrc = [
 ]
 
 [packages]
-pacman = ["neovim", "tree-sitter-cli", "wl-clipboard", "ripgrep", "fd"]
+pacman = [
+    "neovim",
+    "tree-sitter-cli",
+    "wl-clipboard",
+    "ripgrep",
+    "fd",
+    "asciidoctor",
+]
+aur = ["mermaid-cli"]
