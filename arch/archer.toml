@@ -23,7 +23,6 @@ pacman = [
     "pipewire",
     "pipewire-alsa",
     "pipewire-pulse",
-    "pv",
     "tcpdump",
     "tlp",
     "tlp-rdw",
@@ -31,14 +30,11 @@ pacman = [
     "unzip",
     "webkit2gtk",
     "zip",
-    "docker-buildx",
 ]
 
 aur = [
     "aura",
-    "insomnia",
     "zen-browser-bin",
     "ttf-jetbrains-mono-nerd",
     "network-manager-sstp",
-    "popsicle",
 ]

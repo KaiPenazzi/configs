@@ -1,0 +1,14 @@
+name = "provisioner"
+
+[packages]
+pacman = [
+    "inotify-tools",
+    "pv",
+    # "texlive", can not be installed via archer
+    "biber",
+]
+
+aur = [
+    "insomnia",
+    "popsicle",
+]
