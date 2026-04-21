@@ -38,3 +38,5 @@ vim.keymap.set({ "n", "v" }, "<leader>ait", ":LLMSessionToggle<CR>", { desc = "L
 vim.keymap.set({ "n", "v" }, "<leader>aia", ":LLMAppHandler Ask<CR>", { desc = "LLM Ask (buffer / selection)" })
 vim.keymap.set({ "n", "v" }, "<leader>aic", ":LLMAppHandler AttachToChat<CR>",
     { desc = "LLM AttachToChat (buffer / selection)" })
+
+vim.keymap.set({ "n", "v" }, "<leader>ct", function() require("CopilotChat").toggle() end)

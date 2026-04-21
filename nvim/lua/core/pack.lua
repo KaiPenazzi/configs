@@ -7,7 +7,7 @@ vim.pack.add({
     { src = "https://github.com/catppuccin/nvim.git" },
 
     -- Treesitter
-    { src = "https://github.com/nvim-treesitter/nvim-treesitter.git",    build = ":TSUpdate" },
+    { src = "https://github.com/nvim-treesitter/nvim-treesitter.git",          build = ":TSUpdate" },
 
     -- LSP + Completion
     { src = "https://github.com/williamboman/mason.nvim.git" },
@@ -32,15 +32,13 @@ vim.pack.add({
     { src = "https://github.com/lervag/vimtex.git" },
     { src = "https://github.com/windwp/nvim-ts-autotag.git" },
     { src = "https://github.com/windwp/nvim-autopairs.git" },
-    { src = "https://github.com/zbirenbaum/copilot.lua.git" },
     { src = "https://github.com/mfussenegger/nvim-jdtls.git" },
     { src = "https://github.com/echasnovski/mini.nvim.git" },
     { src = "https://github.com/wakatime/vim-wakatime.git" },
     { src = "https://github.com/MunifTanjim/nui.nvim.git" },
 
     -- LLM (lazy via command)
-    {
-        src = "https://github.com/Kurama622/llm.nvim.git",
-        cmd = { "LLMSessionToggle", "LLMSelectedTextHandler", "LLMAppHandler" },
-    },
+    { src = "https://github.com/zbirenbaum/copilot.lua.git" },
+    { src = "https://github.com/CopilotC-Nvim/CopilotChat.nvim.git" },
+    { src = "https://github.com/MeanderingProgrammer/render-markdown.nvim.git" },
 })
