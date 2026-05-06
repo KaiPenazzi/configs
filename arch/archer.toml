@@ -27,8 +27,8 @@ pacman = [
     "tlp",
     "tlp-rdw",
     "torbrowser-launcher",
+    "webkit2gtk-4.1",
     "unzip",
-    "webkit2gtk",
     "zip",
 ]
 

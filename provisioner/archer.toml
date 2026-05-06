@@ -6,9 +6,7 @@ pacman = [
     "pv",
     # "texlive", can not be installed via archer
     "biber",
+    "gimp",
 ]
 
-aur = [
-    "insomnia",
-    "popsicle",
-]
+aur = ["insomnia", "popsicle"]
