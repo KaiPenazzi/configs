@@ -8,7 +8,7 @@ require('nvim-treesitter').setup {
     },
 }
 
-require('nvim-treesitter').install { 'rust', 'python', 'toml', 'gitcommit', 'lua', 'ini', 'markdown', 'latex', 'bash'}
+require('nvim-treesitter').install { 'rust', 'python', 'toml', 'gitcommit', 'lua', 'ini', 'markdown', 'latex', 'bash', 'diff'}
 
 vim.api.nvim_create_autocmd("FileType", {
     callback = function()
