@@ -30,6 +30,7 @@ pacman = [
     "webkit2gtk-4.1",
     "unzip",
     "zip",
+    "inetutils",
 ]
 
 aur = [
