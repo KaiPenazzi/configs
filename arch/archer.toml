@@ -34,6 +34,7 @@ pacman = [
 ]
 
 aur = [
+    "zotero",
     "aura",
     "zen-browser-bin",
     "ttf-jetbrains-mono-nerd",
