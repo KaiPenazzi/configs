@@ -37,9 +37,4 @@ vim.keymap.set({ "n" }, "<leader>li", function()
     vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
 end)
 
-vim.keymap.set({ "n", "v" }, "<leader>ait", ":LLMSessionToggle<CR>", { desc = "LLM toggle Chat" })
-vim.keymap.set({ "n", "v" }, "<leader>aia", ":LLMAppHandler Ask<CR>", { desc = "LLM Ask (buffer / selection)" })
-vim.keymap.set({ "n", "v" }, "<leader>aic", ":LLMAppHandler AttachToChat<CR>",
-    { desc = "LLM AttachToChat (buffer / selection)" })
-
 vim.keymap.set({ "n", "v" }, "<leader>ct", function() require("CopilotChat").toggle() end)
