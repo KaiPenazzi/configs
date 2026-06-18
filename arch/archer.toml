@@ -31,6 +31,7 @@ pacman = [
     "unzip",
     "zip",
     "inetutils",
+    "reflector",
 ]
 
 aur = [
