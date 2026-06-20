@@ -20,5 +20,6 @@ pacman = [
     "libappindicator-gtk3",
     "librsvg",
     "xdotool",
+    "dart-sass",
 ]
-aur = ["codelldb-bin"]
+aur = ["codelldb-bin", "tailwindcss-cli"]

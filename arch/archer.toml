@@ -21,12 +21,7 @@ pacman = [
     "qmk",
     "borgbackup",
     "reflector",
+    "arp-scan",
 ]
 
-aur = [
-    "aura",
-    "spotify",
-    "atlauncher-bin",
-    "insomnia",
-    "zen-browser-bin",
-]
+aur = ["aura", "spotify", "atlauncher-bin", "insomnia", "zen-browser-bin"]
