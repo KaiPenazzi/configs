@@ -60,7 +60,7 @@ hl.animation({ leaf = "workspaces", enabled = true, speed = 6, bezier = "default
 
 local mainMod = "SUPER"
 
-hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd("kitty"))
+hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd("wezterm"))
 hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd("zen-browser"))
 hl.bind(mainMod .. " + C", hl.dsp.window.close())
 hl.bind(mainMod .. " + V", hl.dsp.layout("togglefloating"))
