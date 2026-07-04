@@ -1,0 +1,4 @@
+name = "wezterm"
+
+[packages]
+aur = ["wezterm-nightly-bin"]
