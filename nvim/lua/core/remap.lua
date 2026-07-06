@@ -24,6 +24,7 @@ vim.keymap.set('n', '<Leader>ds', function()
     local widgets = require('dap.ui.widgets')
     widgets.centered_float(widgets.scopes)
 end)
+vim.keymap.set('n', '<Leader>dta', ':DapTerminate<CR>')
 
 vim.keymap.set({ 'n', 'v' }, '<leader>dt', function()
     require("dapui").toggle()

@@ -14,4 +14,3 @@ pacman = [
     "fd",
     "asciidoctor",
 ]
-aur = ["mermaid-cli"]
