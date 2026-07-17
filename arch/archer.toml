@@ -3,7 +3,6 @@ name = "arch"
 bashrc = [
     "export CONFIG_REPO=git@github.com:KaiPenazzi/configs.git",
     "export CONFIG_BRANCH=work",
-    "alias vi='nvim .'",
     "alias pro='cd ~/code/provisioner'",
     "export PATH=\"$HOME/.cargo/bin:$PATH\"",
 ]

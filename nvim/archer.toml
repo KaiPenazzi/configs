@@ -3,6 +3,8 @@ name = "nvim"
 bashrc = [
     "alias so='source .venv/bin/activate'",
     "alias ex='export $(cat .env)'",
+    "export EDITOR='nvim'",
+    "alias vi='nvim .'",
 ]
 
 [packages]

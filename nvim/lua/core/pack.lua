@@ -32,7 +32,7 @@ vim.pack.add({
     { src = "https://github.com/lervag/vimtex.git" },
     { src = "https://github.com/windwp/nvim-ts-autotag.git" },
     { src = "https://github.com/windwp/nvim-autopairs.git" },
-    { src = "https://github.com/mfussenegger/nvim-jdtls.git" },
+    -- { src = "https://github.com/mfussenegger/nvim-jdtls.git" },
     { src = "https://github.com/echasnovski/mini.nvim.git" },
     { src = "https://github.com/wakatime/vim-wakatime.git" },
     { src = "https://github.com/MunifTanjim/nui.nvim.git" },
