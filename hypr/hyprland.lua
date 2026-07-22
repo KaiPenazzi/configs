@@ -69,11 +69,20 @@ hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("~/.config/hypr/lock.sh"))
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("hyprshot -m region --clipboard-only"))
 hl.bind(mainMod .. " + SHIFT + M", hl.dsp.exec_cmd("shutdown -h 0"))
 
+restart_waybaer_hyprpaper = function()
+    hl.exec_cmd("pkill waybar")
+    hl.exec_cmd("pkill hyprpaper")
+    hl.exec_cmd("waybar & sleep 0.1")
+    hl.exec_cmd("hyprpaper")
+end
+
 hl.bind(mainMod .. " + SHIFT + I", function()
     hl.monitor({ output = "eDP-1", disabled = true })
+    restart_waybaer_hyprpaper()
 end)
 hl.bind(mainMod .. " + i", function()
     hl.monitor({ output = "eDP-1", disabled = false })
+    restart_waybaer_hyprpaper()
 end)
 
 hl.bind(mainMod .. " + H", hl.dsp.focus({ direction = "left" }))
