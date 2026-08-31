@@ -1,0 +1,8 @@
+name = "atlauncher"
+
+[packages]
+pacman = [
+    "flite"
+]
+
+aur = ["atlauncher-bin"]

@@ -22,6 +22,11 @@ pacman = [
     "borgbackup",
     "reflector",
     "arp-scan",
+    "modrinth-app",
+    "radeontop",
+    "earlyoom",
+    "mesa-utils",
+    "netcat",
 ]
 
-aur = ["aura", "spotify", "atlauncher-bin", "insomnia", "zen-browser-bin"]
+aur = ["aura", "spotify", "insomnia", "zen-browser-bin"]

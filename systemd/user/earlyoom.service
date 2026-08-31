@@ -1,0 +1,11 @@
+[Unit]
+Description=erlyoom daemon
+
+[Service]
+ExecStart=/usr/bin/earlyoom -m 2
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target
+
