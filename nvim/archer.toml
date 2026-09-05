@@ -4,7 +4,6 @@ name = "nvim"
 pacman = [
     "neovim",
     "tree-sitter-cli",
-    "jdtls",
     "rustup",
     "jdk-openjdk",
     "wl-clipboard",

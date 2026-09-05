@@ -14,7 +14,6 @@ pacman = [
     "keepassxc",
     "nextcloud-client",
     "unzip",
-    "webkit2gtk",
     "zip",
     "fastfetch",
     "chafa",
@@ -27,6 +26,10 @@ pacman = [
     "earlyoom",
     "mesa-utils",
     "netcat",
+    "wireplumber",
+    "pipewire-alsa",
+    "pipewire-pulse",
+    "openssh",
 ]
 
 aur = ["aura", "spotify", "insomnia", "zen-browser-bin"]
