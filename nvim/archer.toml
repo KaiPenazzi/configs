@@ -20,5 +20,6 @@ pacman = [
     "librsvg",
     "xdotool",
     "dart-sass",
+    "typos",
 ]
 aur = ["codelldb-bin", "tailwindcss-cli"]

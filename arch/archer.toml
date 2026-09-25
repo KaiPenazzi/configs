@@ -30,6 +30,7 @@ pacman = [
     "pipewire-alsa",
     "pipewire-pulse",
     "openssh",
+    "signal-desktop",
 ]
 
 aur = ["aura", "spotify", "insomnia", "zen-browser-bin"]

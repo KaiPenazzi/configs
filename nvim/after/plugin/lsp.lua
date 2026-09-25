@@ -1,5 +1,20 @@
 local cmp = require('cmp')
 
+local root_dir = vim.fs.root(".", ".git")
+
+if root_dir then
+    local root_name = vim.fs.basename(root_dir)
+    vim.lsp.config['rust_analyzer'] = {
+        settings = {
+            ['rust-analyzer'] = {
+                cargo = {
+                    targetDir = "~/.cache/lsp/rust_analyzer/" .. root_name,
+                }
+            }
+        }
+    }
+end
+
 vim.lsp.enable('rust_analyzer')
 vim.lsp.enable('ty')
 vim.lsp.enable('ruff')
