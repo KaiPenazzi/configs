@@ -1,25 +1,17 @@
 local config = {
     cmd = { '/usr/bin/jdtls' },
-    root_dir = vim.fs.dirname(vim.fs.find({ '.project', 'mvnw' }, { upward = true })[1]),
+    root_dir = vim.fs.dirname(vim.fs.find({ '.project', 'mvnw', 'gradlew' }, { upward = true })[1]),
     settings = {
         java = {
             configuration = {
                 runtimes = {
                     {
-                        name = "JavaSE-21",
-                        path = "/usr/lib/jvm/java-21-openjdk/",
-                    },
-                    {
-                        name = "JavaSE-17",
-                        path = "/usr/lib/jvm/java-17-openjdk/",
-                    },
-                    {
-                        name = "JavaSE-24",
-                        path = "/usr/lib/jvm/java-24-openjdk/",
+                        name = "JavaSE-27",
+                        path = "/usr/lib/jvm/java-27-openjdk/",
                     },
                 }
-            }
-        }
+            },
+        },
     },
 
     init_options = {

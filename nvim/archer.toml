@@ -1,5 +1,10 @@
 name = "nvim"
 
+bashrc = [
+    "alias vi='nvim .'",
+    "export PATH=\"$HOME/.ghcup/bin:$PATH\"",
+]
+
 [packages]
 pacman = [
     "neovim",
@@ -21,5 +26,9 @@ pacman = [
     "xdotool",
     "dart-sass",
     "typos",
+    "maven",
+    "typst",
+    "tinymist",
+    "gradle"
 ]
-aur = ["codelldb-bin", "tailwindcss-cli"]
+aur = ["codelldb-bin", "tailwindcss-cli", "jdtls", "ghcup-hs-bin"]

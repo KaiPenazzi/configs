@@ -2,7 +2,6 @@ name = "arch"
 
 bashrc = [
     "export CONFIG_REPO=git@github.com:KaiPenazzi/configs.git",
-    "alias vi='nvim .'",
     "export PATH=\"$HOME/.cargo/bin:$PATH\"",
 ]
 

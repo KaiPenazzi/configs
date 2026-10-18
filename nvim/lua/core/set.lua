@@ -10,3 +10,5 @@ vim.opt.cursorcolumn = false
 vim.opt.cursorline = false
 vim.opt.updatetime = 300
 vim.o.signcolumn = "yes"
+vim.o.exrc = true
+
