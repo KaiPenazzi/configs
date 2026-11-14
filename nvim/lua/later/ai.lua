@@ -18,7 +18,7 @@ require('copilot').setup({
 })
 
 require("CopilotChat").setup({
-    model = 'gpt-5-mini',
+    model = 'gpt-6-luna',
     mappings = {
         close = {
             normal = 'q',

@@ -1,6 +1,6 @@
 local config = {
     cmd = { '/usr/bin/jdtls' },
-    root_dir = vim.fs.dirname(vim.fs.find({ '.project', 'mvnw', 'gradlew' }, { upward = true })[1]),
+    root_dir = vim.fs.dirname(vim.fs.find({ 'mvnw', 'gradlew' }, { upward = true })[1]),
     settings = {
         java = {
             configuration = {

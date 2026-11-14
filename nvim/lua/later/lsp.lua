@@ -15,6 +15,12 @@ vim.lsp.enable('rust_analyzer')
 vim.lsp.enable('ty')
 vim.lsp.enable('ruff')
 
+
+vim.lsp.config['hls'] = {
+    cmd = { 'haskell-language-server-wrapper', '--lsp' },
+}
+vim.lsp.enable('hls')
+
 cmp.setup({
     sources = {
         { name = 'nvim_lsp' },

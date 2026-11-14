@@ -30,6 +30,8 @@ pacman = [
     "pipewire-pulse",
     "openssh",
     "signal-desktop",
+    "rsync",
+    "obs-studio",
 ]
 
-aur = ["aura", "spotify", "insomnia", "zen-browser-bin"]
+aur = ["aura", "spotify", "insomnia", "zen-browser-bin", "norisk-client-launcher"]
