@@ -1,6 +1,3 @@
-local cmp = require('cmp')
-
-
 vim.lsp.config['rust_analyzer'] = {
     settings = {
         ['rust-analyzer'] = {
@@ -21,32 +18,26 @@ vim.lsp.config['hls'] = {
 }
 vim.lsp.enable('hls')
 
-cmp.setup({
-    sources = {
-        { name = 'nvim_lsp' },
-        { name = 'nvim_lua' },
+require('blink.cmp').setup({
+    keymap = {
+        preset = 'default',
+        ['<Tab>'] = { 'select_next', 'fallback' },
+        ['<S-Tab>'] = { 'select_prev', 'fallback' },
+        ['<C-y>'] = { 'accept', 'fallback' },
     },
-    preselect = 'none',
-    mapping = cmp.mapping.preset.insert({
 
-        ['<Tab>'] = cmp.mapping(function(fallback)
-            if cmp.visible() then
-                cmp.select_next_item()
-            else
-                fallback()
-            end
-        end, { 'i' }),
+    sources = {
+        default = { 'lsp', 'path', 'snippets', 'buffer' },
+    },
 
-        ['<S-Tab>'] = cmp.mapping(function(fallback)
-            if cmp.visible() then
-                cmp.select_prev_item()
-            else
-                fallback()
-            end
-        end, { 'i' }),
+    completion = {
+        documentation = {
+            auto_show = true,
+            -- auto_show_delay_ms = 300,
+        },
+    },
 
-        ['<C-y>'] = cmp.mapping.confirm(),
-    }),
+    signature = { enabled = true },
 })
 
 vim.api.nvim_create_autocmd("BufWritePre", {
