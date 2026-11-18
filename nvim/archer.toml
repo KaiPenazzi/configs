@@ -31,5 +31,6 @@ pacman = [
     "typst",
     "tinymist",
     "gradle"
+    "nodejs",
 ]
 aur = ["codelldb-bin", "tailwindcss-cli", "jdtls", "ghcup-hs-bin"]
