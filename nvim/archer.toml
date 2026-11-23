@@ -4,6 +4,7 @@ bashrc = [
     "alias vi='nvim .'",
     "export PATH=\"$HOME/.ghcup/bin:$PATH\"",
     "alias so='source .venv/bin/activate'",
+    "export EDITOR=nvim",
 ]
 
 [packages]
