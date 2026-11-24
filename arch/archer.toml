@@ -32,10 +32,10 @@ pacman = [
     "inetutils",
     "reflector",
     "bluetui",
+    "trivy",
 ]
 
 aur = [
-    "zotero",
     "aura",
     "zen-browser-bin",
     "ttf-jetbrains-mono-nerd",

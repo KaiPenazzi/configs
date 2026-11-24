@@ -9,4 +9,4 @@ pacman = [
     "gimp",
 ]
 
-aur = ["insomnia", "popsicle"]
+aur = ["insomnia", "popsicle", "balena-etcher"]

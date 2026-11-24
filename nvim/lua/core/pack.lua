@@ -13,8 +13,9 @@ vim.pack.add({
     { src = "https://github.com/williamboman/mason.nvim.git" },
     { src = "https://github.com/williamboman/mason-lspconfig.nvim.git" },
     { src = "https://github.com/neovim/nvim-lspconfig.git" },
-    { src = "https://github.com/hrsh7th/nvim-cmp.git" },
-    { src = "https://github.com/hrsh7th/cmp-nvim-lsp.git" },
+    { src = "https://github.com/saghen/blink.lib.git" },
+    { src = "https://github.com/rafamadriz/friendly-snippets.git" },
+    { src = "https://github.com/saghen/blink.cmp.git",                         version = "v1.10.2" },
 
     -- DAP
     { src = "https://github.com/mfussenegger/nvim-dap.git" },

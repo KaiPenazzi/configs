@@ -18,7 +18,7 @@ require('copilot').setup({
 })
 
 require("CopilotChat").setup({
-    model = 'gpt-5-mini',
+    model = 'gpt-6.1-sol',
     mappings = {
         close = {
             normal = 'q',
@@ -32,4 +32,7 @@ require("CopilotChat").setup({
 
 require('render-markdown').setup({
     file_types = { 'markdown', 'copilot-chat' },
+    html = { enabled = false },
+    yaml = { enabled = false },
+    latex = { enabled = false },
 })

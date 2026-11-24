@@ -3,5 +3,5 @@ name = "work"
 bashrc = ["alias rpiboot='rpiusbboot'"]
 
 [packages]
-pacman = ["time", "udisks2", "tree"]
+pacman = ["time", "udisks2", "tree" , "mermaid-cli"]
 aur = ["rpiusbboot-git", "bmaptool", "rpi-imager"]
